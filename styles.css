@@ -1,0 +1,94 @@
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 20%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --off-black: hsl(0, 0%, 8%);
+
+  --h1-font-size: 1.375rem;
+  --h2-font-size: .75rem;
+  --p-font-size: .75rem;
+  --a-font-size: .75rem;
+
+  --font-family: "Inter", sans-serif;
+  --font-weight-light: 400;
+  --font-weight-medium: 600;
+  --font-weight-heavy: 700;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--off-black);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-grey);
+  border-radius: .625rem;
+  height: auto;
+  width: 95%;
+  max-width: 20rem;
+  padding: 2rem;
+}
+
+main img {
+  width: 5rem;
+  height: 5rem;
+  clip-path: circle(50% at 50% 50%);
+}
+
+h1 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  color: var(--white);
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  color: var(--green);
+  font-size: var(--h2-font-size);
+}
+
+main p {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-light);
+  color: var(--white);
+  font-size: var(--p-font-size);
+}
+
+main a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: var(--grey);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-medium);
+  color: var(--white);
+  font-size: var(--a-font-size);
+  border-radius: .625rem;
+  padding: 0.75rem;
+  margin: 0.75rem auto 0 auto;
+  cursor: pointer;
+  text-decoration: none;
+}
